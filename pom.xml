@@ -4,28 +4,23 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>hu.unideb.inf</groupId>
-    <artifactId>jdbi-examples</artifactId>
+    <artifactId>jdbi-person-homework</artifactId>
     <version>1.0</version>
     <developers>
         <developer>
-            <id>jeszy</id>
-            <name>Péter Jeszenszky</name>
-            <email>jeszenszky.peter@inf.unideb.hu</email>
+            <name>Wang Yuxuan</name>
+            <email>wangyx0316@126.com</email>
             <organization>Faculty of Informatics, University of Debrecen</organization>
             <organizationUrl>https://www.inf.unideb.hu/</organizationUrl>
         </developer>
     </developers>
-    <scm>
-        <url>https://github.com/jeszy75/jdbi-examples</url>
-        <connection>scm:git:https://github.com/jeszy75/jdbi-examples.git</connection>
-        <developerConnection>scm:git:https://github.com/jeszy75/jdbi-examples.git</developerConnection>
-    </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>15</maven.compiler.release>
         <jdbi.version>3.19.0</jdbi.version>
         <tinylog.version>2.2.1</tinylog.version>
         <exec.cleanupDaemonThreads>false</exec.cleanupDaemonThreads>
+        <exec.mainClass>person.Main</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
@@ -69,6 +64,12 @@
             <artifactId>slf4j-tinylog</artifactId>
             <version>${tinylog.version}</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
     <build>
